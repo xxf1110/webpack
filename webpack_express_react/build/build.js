@@ -2,8 +2,7 @@ const webpack = require('webpack')
 const config = require('../webpack.config')
 
 
-webpack(config, (err) => {
-  console.log('buliding。。。。。。')
+webpack(config, (err) => { 
   if(err) throw err
 })
 
