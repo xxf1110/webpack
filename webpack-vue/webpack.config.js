@@ -33,14 +33,7 @@ module.exports = {
         test: /\.css$/,
         use: ExtractTextWebpackPlugin.extract({ // 使用ExtractTextWebpackPlugin 就不需要style-loader
           use: ['css-loader', 'postcss-loader']  
-        }) 
-        // use: ['style-loader', 'css-loader', 'postcss-loader'], // 从右向左解析
-        /*
-          use: [
-            {loader: 'style-loader'},
-            {loader: 'css-loader'},
-          ]
-        */
+        })  
       }, 
       {
         test: /\.(jpe?g|png|gif)$/,
